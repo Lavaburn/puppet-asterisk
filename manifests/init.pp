@@ -19,6 +19,7 @@ class asterisk (
   $features_options        = $asterisk::params::features_options,
   $features_featuremap     = {},
   $queues_options          = {},
+  $modules_preload         = [],
   $modules_autoload        = $asterisk::params::modules_autoload,
   $modules_noload          = $asterisk::params::modules_noload,
   $modules_load            = $asterisk::params::modules_load,

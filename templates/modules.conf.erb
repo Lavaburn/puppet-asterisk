@@ -7,6 +7,10 @@
 ; Asterisk Module Loader configuration file
 ;
 [modules]
+<% @modules_preload.each do |preload| -%>
+load => <%= preload %>
+<% end -%>
+
 autoload=<%= @modules_autoload %>
 
 <% @modules_noload.each do |noload| -%>

@@ -66,6 +66,7 @@ class asterisk::config {
     content => template('asterisk/manager.conf.erb'),
   }
 
+  $modules_preload = $asterisk::modules_preload
   $modules_autoload = $asterisk::real_modules_autoload
   $modules_noload = $asterisk::modules_noload
   $modules_load = $asterisk::modules_load
